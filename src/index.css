@@ -1,13 +1,39 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+}
+
+#carousel {
+    max-height: 600px !important; /* Set the max height for the carousel */
+    overflow: hidden !important; /* Hide overflow content */
+    position: relative;
+}
+
+.carousel-item {
+    height: 600px !important; /* Ensure each carousel item has a height of 600px */
+}
+
+.carousel-item img {
+    width: 100% !important; /* Make images take full width */
+    height: 100% !important; /* Set image height to fill the item */
+    object-fit: cover !important; /* Cover the area while maintaining aspect ratio */
+    object-position: center !important; /* Ensure the image is centered within the container */
+}
+
+/* Optional: Adjust the form and caption */
+.carousel-caption {
+    z-index: 10;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
 }
